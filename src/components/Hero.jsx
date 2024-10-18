@@ -67,206 +67,243 @@ export default function Hero() {
   return (
     <>
     {/* ///////////////////// Banner Section Start///////////////////////////////////////// */}
-    <div className='bannerimage p-20  flex items-center justify-center '>
-      <div className='w-[50%]'>
-        <h1 className='md:text-[56px] text-white customeFontFamily'>Invest in Stocks, Forex and Commodity market way to trade </h1>
-        <p className='text-white text-[18px]'>Welcome to VIP Traid, your gateway to financial freedom through the exciting world of forex trading. At VIP Traid, we believe that everyone has the potential to achieve financial success with the right guidance and resources. Our comprehensive programs and supportive community are designed to help you navigate the forex market with confidence and skill.</p>
-        <div className='flex gap-3 mt-3'>
-        <button className='btn  btn-secondary px-4 uppercase'>Learn More</button>
-        <button className='btn  btn-secondary px-4 uppercase'>Contact Us</button>
-        </div>
-      </div>
-      <div className=' w-[50%]'>Section 2</div>
+    <div className='bannerimage p-10 md:p-20 flex flex-col md:flex-row items-center justify-center'>
+  <div className='md:w-[50%] w-full mb-8 md:mb-0'>
+    <h1 className='text-[32px] md:text-[56px] text-white customeFontFamily leading-tight'>
+      Invest in Stocks, Forex and Commodity market way to trade
+    </h1>
+    <p className='text-white text-[16px] md:text-[18px] mt-4'>
+      Welcome to [Company Name] your gateway to financial freedom through the exciting world of forex trading. At [Company Name] we believe that everyone has the potential to achieve financial success with the right guidance and resources. Our comprehensive programs and supportive community are designed to help you navigate the forex market with confidence and skill.
+    </p>
+    <div className='flex gap-3 mt-6'>
+      <button className='btn btn-secondary px-4 uppercase'>Learn More</button>
+      <button className='btn btn-secondary px-4 uppercase'>Contact Us</button>
     </div>
+  </div>
+  <div className='md:w-[50%] w-full'>
+    <img src="path_to_image.jpg" alt="Section 2 Image" className='w-full h-auto' />
+  </div>
+</div>
+
     {/* //////////////////////////////// Banner Section End ////////////////////////////// */}
 
     {/* /////////////////////////////////// Welcome Section Start ///////////////////////////// */}
-    <div className='welcome-main-container h-[350px]'>
-        <div className='welcome-boxcontainer h-[350px] relative'>
-            <p className='company-text absolute top-[50%] -left-10 text-gray-500'>Company Name</p>
-            <div className='welcome-text-container w-full text-center pt-20 text-3xl font-bold text-white flex flex-col items-center justify-center'>
-                <h1 className='text-4xl'>WELCOME TO <span className='text-[#6272F7]'>COMPANY NAME</span> </h1>
-                <p className='mt-10 font-medium italic'><RiDoubleQuotesL className='inline text-[50px] me-16 text-[#404040]'/> We Believe & Live in Reality<RiDoubleQuotesR className='inline ms-16 text-[50px] text-[#404040]' /></p>
-                <p className='w-[65%] text-[16px] font-semibold mt-10 leading-6'>We are happy to inform you that you all are not just our clients but also our business partners. Together we will make good profits in the global market. Join us at VIP TRADE, where we are committed to empowering the Forex and Commodity markets with cutting-edge solutions and unwavering dedication to our customers.</p>
-            </div>
-        </div>
+    <div className='welcome-main-container h-auto md:h-[350px] bg-gray-900'>
+  <div className='welcome-boxcontainer h-auto md:h-[350px] relative p-5 md:p-0'>
+    <p className='company-text absolute top-1/2 transform -translate-y-1/2 -left-10 text-gray-500 text-sm md:text-base'>Company Name</p>
+    <div className='welcome-text-container w-full text-center pt-10 md:pt-20 text-2xl md:text-3xl font-bold text-white flex flex-col items-center justify-center'>
+      <h1 className='text-3xl md:text-4xl'>WELCOME TO <span className='text-[#6272F7]'>COMPANY NAME</span></h1>
+      <p className='mt-5 md:mt-10 font-medium italic'>
+        <RiDoubleQuotesL className='inline text-[40px] md:text-[50px] me-8 text-[#404040]' /> 
+        We Believe & Live in Reality
+        <RiDoubleQuotesR className='inline ms-8 md:text-[50px] text-[#404040]' />
+      </p>
+      <p className='w-full md:w-[65%] text-[14px] md:text-[16px] font-semibold mt-5 md:mt-10 leading-6 mx-auto'>
+        We are happy to inform you that you all are not just our clients but also our business partners. Together we will make good profits in the global market. Join us at [Company Name] where we are committed to empowering the Forex and Commodity markets with cutting-edge solutions and unwavering dedication to our customers.
+      </p>
     </div>
+  </div>
+</div>
+
     {/* /////////////////////////////////// Welcome Section End ///////////////////////////// */}
 
     {/* /////////////////////////////////// Work Parts Section Start ///////////////////////// */}
-        <div className='workpart-container '>
-            <div className='workpart-subcontainer text-center pt-20 text-3xl font-bold text-white flex flex-col items-center justify-start relative'>
-            <p className='company-text absolute top-[50%] -right-20 text-gray-500'>Company Name</p>
-            <h1 className='text-4xl'>WHAT IS VIP TRAID &  <span className='text-[#6272F7]'>HOW IT WORKS?</span> </h1>
-            <p className='mt-10 text-xl font-medium italic w-[50%]'>Join us at VIP TRADE, where we are committed to empowering the Forex and Commodity markets with cutting-edge solutions and unwavering dedication to our customers.</p>
-            <div className='w-full flex items-center justify-center mt-16 px-20'>
-                <div className=' w-[50%]'>
-                    <img src={tradImage} alt="" width='100%' />
-                </div>
-                <div className='w-[50%] pe-[50px]'>
-                <h1 className='text-4xl text-left'>We’ve built this platform to deal in Forex and Commodity market. </h1>
-                <p className='mt-3 text-lg font-medium  text-left'>Welcome to VIP TRAID, where we power the Forex and Commodity market with innovative and reliable solutions for our customers. Our mission is to achieve mutual success with our clients in the global market, built on a foundation of Trust and Commitment.</p>
-                <p className='mt-3 text-base font-medium  text-left'><FaCircleCheck className='inline me-3' />We Belive & Live in Reality.</p>
-                <p className='mt-3 text-base font-medium text-left'><FaCircleCheck className='inline me-3' />Providing the help for your given transaction a full support for 24x7.</p>
-                
-                </div>
-            </div>
-            </div>
-            <div>
-            </div>
-            <div>
-            </div>
-        </div>
-    {/* /////////////////////////////////// Work Parts Section End ///////////////////////// */}
-
-    {/* //////////////////////////////////// Traid RoadMap Start ///////////////////////////////////*/}
-
-        <div className='w-full bg-[#1f222b;] pt-12 flex flex-col items-center pb-10'>
-        <h1 className='text-4xl text-white text-center font-bold'>VIP TRAID <span className='text-[#6272F7]'>RoadMap</span> </h1>
-        <div className='w-full flex mt-20 px-20'>
-            <div className='w-[50%]'>
-            <div className='relative'>
-            <div className='flex items-start gap-3 px-3 mapoutline'>
-                <img src={mapimage1} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
-                <div className='pt-3'>
-                    <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
-                    <p className='text-[#888]'>VIP Trade Company is now launching its best investment programs through which people can get different types of income. trade profit income, referral income, reward income and also royalty income. He can earn a lot from all these income.</p>
-                </div>
-            </div>
-        </div>
-            <div className='relative mt-3 '>
-            <div className='flex items-start gap-3 px-3 mapoutline'>
-                <img src={mapimage2} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
-                <div className='pt-3'>
-                    <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
-                    <p className='text-[#888]'>VIP Trade Company is now launching its best investment programs through which people can get different types of income. trade profit income, referral income, reward income and also royalty income. He can earn a lot from all these income.</p>
-                </div>
-            </div>
-        </div>
-            <div className='relative mt-3 '>
-            <div className='flex items-start gap-3 px-3'>
-                <img src={mapimage3} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
-                <div className='pt-3'>
-                    <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
-                    <p className='text-[#888]'>VIP Trade Company is now launching its best investment programs through which people can get different types of income. trade profit income, referral income, reward income and also royalty income. He can earn a lot from all these income.</p>
-                </div>
-            </div>
-        </div>
-            </div>
-       
-        <div className='w-[50%]'>
-        <div className='relative'>
-            <div className='flex items-start gap-3 px-3 mapoutline'>
-                <img src={mapimage4} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
-                <div className='pt-3'>
-                    <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
-                    <p className='text-[#888]'>VIP Trade Company is now launching its best investment programs through which people can get different types of income. trade profit income, referral income, reward income and also royalty income. He can earn a lot from all these income.</p>
-                </div>
-            </div>
-        </div>
-        <div className='relative mt-3'>
-            <div className='flex items-start gap-3 px-3 mapoutline'>
-                <img src={mapimage5} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
-                <div className='pt-3'>
-                    <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
-                    <p className='text-[#888]'>VIP Trade Company is now launching its best investment programs through which people can get different types of income. trade profit income, referral income, reward income and also royalty income. He can earn a lot from all these income.</p>
-                </div>
-            </div>
-        </div>
-        <div className='relative mt-3'>
-            <div className='flex items-start gap-3 px-3'>
-                <img src={mapimage6} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
-                <div className='pt-3'>
-                    <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
-                    <p className='text-[#888]'>VIP Trade Company is now launching its best investment programs through which people can get different types of income. trade profit income, referral income, reward income and also royalty income. He can earn a lot from all these income.</p>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-
-    {/* //////////////////////////////////// Traid RoadMap End /////////////////////////////////////*/}
-
-
-    {/* /////////////////////////////////////VIP TRAID BEST FEATURES Section Start//////////////////////////////// */}
-    <div className='w-full h-auto bg-black px-[80px] pb-14'>
-        <div className='pt-10'>
-        <h1 className='text-4xl text-white text-center font-bold'>VIP TRAID <span className='text-[#6272F7]'>BEST FEATURES</span> </h1>
-        <p className='text-white text-[18px] text-center'>VIP TRAID provide Safe & Secure, Better Bonus and Easy to access platform for customers.</p>
-        </div>
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-  <div className="col">
-    <div className="card h-100 cardbackgroundcontainer">
-      <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
-        <img src={futureimage1} alt="" width='60px' className='cardimagebackground p-3' />
-        <h5 className="card-title text-3xl font-bold">Card title</h5>
-        <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div className='workpart-container'>
+  <div className='workpart-subcontainer text-center pt-20 text-3xl font-bold text-white flex flex-col items-center justify-start relative'>
+    {/* <p className='company-text absolute top-[50%] transform -translate-y-1/2 -right-20 text-gray-500'>Company Name</p> */}
+    <h1 className='text-3xl md:text-4xl'>
+      WHAT IS [Company Name] & <span className='text-[#6272F7]'>HOW IT WORKS?</span>
+    </h1>
+    <p className='mt-10 text-xl font-medium italic w-full md:w-[50%] mx-auto'>
+      Join us at [Company Name] where we are committed to empowering the Forex and Commodity markets with cutting-edge solutions and unwavering dedication to our customers.
+    </p>
+    <div className='w-full flex flex-col md:flex-row items-center justify-center mt-16 px-5 md:px-20'>
+      <div className='w-full md:w-[50%]'>
+        <img src={tradImage} alt="" className='w-full h-auto' />
       </div>
-    </div>
-  </div>
-  <div className="col">
-  <div className="card h-100 cardbackgroundcontainer">
-      <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
-        <img src={futureimage2} alt="" width='60px' className='cardimagebackground p-3' />
-        <h5 className="card-title text-3xl font-bold">Card title</h5>
-        <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div className="col">
-  <div className="card h-100 cardbackgroundcontainer">
-      <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
-        <img src={futureimage3} alt="" width='60px' className='cardimagebackground p-3' />
-        <h5 className="card-title text-3xl font-bold">Card title</h5>
-        <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div className="col">
-  <div className="card h-100 cardbackgroundcontainer">
-      <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
-        <img src={futureimage4} alt="" width='60px' className='cardimagebackground p-3' />
-        <h5 className="card-title text-3xl font-bold">Card title</h5>
-        <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div className="col">
-  <div className="card h-100 cardbackgroundcontainer">
-      <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
-        <img src={futureimage5} alt="" width='60px' className='cardimagebackground p-3' />
-        <h5 className="card-title text-3xl font-bold">Card title</h5>
-        <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div className="col">
-  <div className="card h-100 cardbackgroundcontainer">
-      <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
-        <img src={futureimage6} alt="" width='60px' className='cardimagebackground p-3' />
-        <h5 className="card-title text-3xl font-bold">Card title</h5>
-        <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <div className='w-full md:w-[50%] md:pe-[50px] mt-5 md:mt-0'>
+        <h1 className='text-3xl md:text-4xl text-left'>We’ve built this platform to deal in Forex and Commodity market.</h1>
+        <p className='mt-3 text-lg font-medium text-left'>Welcome to [Company Name] where we power the Forex and Commodity market with innovative and reliable solutions for our customers. Our mission is to achieve mutual success with our clients in the global market, built on a foundation of Trust and Commitment.</p>
+        <p className='mt-3 text-base font-medium text-left'>
+          <FaCircleCheck className='inline me-3' /> We Believe & Live in Reality.
+        </p>
+        <p className='mt-3 text-base font-medium text-left'>
+          <FaCircleCheck className='inline me-3' /> Providing help for your transactions with full support 24/7.
+        </p>
       </div>
     </div>
   </div>
 </div>
 
+    {/* /////////////////////////////////// Work Parts Section End ///////////////////////// */}
+
+    {/* //////////////////////////////////// Traid RoadMap Start ///////////////////////////////////*/}
+
+    <div className='w-full bg-[#1f222b] pt-12 flex flex-col items-center pb-10'>
+  <h1 className='text-4xl text-white text-center font-bold'>
+    [Company Name] <span className='text-[#6272F7]'>RoadMap</span>
+  </h1>
+  <div className='w-full flex flex-col md:flex-row mt-20 px-5 md:px-20'>
+    <div className='w-full md:w-1/2'>
+      <div className='relative'>
+        <div className='flex items-start gap-3 px-3 mapoutline'>
+          <img src={mapimage1} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
+          <div className='pt-3'>
+            <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
+            <p className='text-[#888]'>
+              [Company Name] Company is now launching its best investment programs through which people can get different types of income: trade profit income, referral income, reward income, and also royalty income. You can earn a lot from all these income sources.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className='relative mt-3'>
+        <div className='flex items-start gap-3 px-3 mapoutline'>
+          <img src={mapimage2} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
+          <div className='pt-3'>
+            <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
+            <p className='text-[#888]'>
+              [Company Name] Company is now launching its best investment programs through which people can get different types of income: trade profit income, referral income, reward income, and also royalty income. You can earn a lot from all these income sources.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className='relative mt-3'>
+        <div className='flex items-start gap-3 px-3'>
+          <img src={mapimage3} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
+          <div className='pt-3'>
+            <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
+            <p className='text-[#888]'>
+              [Company Name] Company is now launching its best investment programs through which people can get different types of income: trade profit income, referral income, reward income, and also royalty income. You can earn a lot from all these income sources.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    {/* /////////////////////////////////////VIP TRAID BEST FEATURES Section End//////////////////////////////// */}
+
+    <div className='w-full md:w-1/2'>
+      <div className='relative'>
+        <div className='flex items-start gap-3 px-3 mapoutline'>
+          <img src={mapimage4} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
+          <div className='pt-3'>
+            <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
+            <p className='text-[#888]'>
+              [Company Name] Company is now launching its best investment programs through which people can get different types of income: trade profit income, referral income, reward income, and also royalty income. You can earn a lot from all these income sources.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className='relative mt-3'>
+        <div className='flex items-start gap-3 px-3 mapoutline'>
+          <img src={mapimage5} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
+          <div className='pt-3'>
+            <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
+            <p className='text-[#888]'>
+              [Company Name] Company is now launching its best investment programs through which people can get different types of income: trade profit income, referral income, reward income, and also royalty income. You can earn a lot from all these income sources.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className='relative mt-3'>
+        <div className='flex items-start gap-3 px-3'>
+          <img src={mapimage6} alt="" width='60px' className='p-2 rounded-full mapimagebackground' />
+          <div className='pt-3'>
+            <h1 className='text-white text-3xl font-bold'>Investing Program</h1>
+            <p className='text-[#888]'>
+              [Company Name] Company is now launching its best investment programs through which people can get different types of income: trade profit income, referral income, reward income, and also royalty income. You can earn a lot from all these income sources.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    {/* //////////////////////////////////// Traid RoadMap End /////////////////////////////////////*/}
+
+
+    {/* /////////////////////////////////////[Company Name] BEST FEATURES Section Start//////////////////////////////// */}
+    <div className='w-full h-auto bg-black px-[80px] pb-14'>
+    <div className='pt-10'>
+        <h1 className='text-4xl text-white text-center font-bold'>[Company Name] <span className='text-[#6272F7]'>BEST FEATURES</span></h1>
+        <p className='text-white text-[18px] text-center'>[Company Name] provides a Safe & Secure, Better Bonus, and Easy to access platform for customers.</p>
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+        <div className="col">
+            <div className="card h-100 cardbackgroundcontainer">
+                <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
+                    <img src={futureimage1} alt="" width='60px' className='cardimagebackground p-3' />
+                    <h5 className="card-title text-3xl font-bold">Card title</h5>
+                    <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div className="col">
+            <div className="card h-100 cardbackgroundcontainer">
+                <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
+                    <img src={futureimage2} alt="" width='60px' className='cardimagebackground p-3' />
+                    <h5 className="card-title text-3xl font-bold">Card title</h5>
+                    <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div className="col">
+            <div className="card h-100 cardbackgroundcontainer">
+                <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
+                    <img src={futureimage3} alt="" width='60px' className='cardimagebackground p-3' />
+                    <h5 className="card-title text-3xl font-bold">Card title</h5>
+                    <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div className="col">
+            <div className="card h-100 cardbackgroundcontainer">
+                <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
+                    <img src={futureimage4} alt="" width='60px' className='cardimagebackground p-3' />
+                    <h5 className="card-title text-3xl font-bold">Card title</h5>
+                    <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div className="col">
+            <div className="card h-100 cardbackgroundcontainer">
+                <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
+                    <img src={futureimage5} alt="" width='60px' className='cardimagebackground p-3' />
+                    <h5 className="card-title text-3xl font-bold">Card title</h5>
+                    <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div className="col">
+            <div className="card h-100 cardbackgroundcontainer">
+                <div className="card-body cardbackground p-5 flex flex-col justify-center items-center text-white">
+                    <img src={futureimage6} alt="" width='60px' className='cardimagebackground p-3' />
+                    <h5 className="card-title text-3xl font-bold">Card title</h5>
+                    <p className="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    {/* /////////////////////////////////////[Company Name] BEST FEATURES Section End//////////////////////////////// */}
 
 
     {/* /////////////////////////////////////BENEFITS FOREX & COMMODITY Section Start /////////////////////////// */}
     <div className='w-full h-auto bg-[#281F2F]'>
-        <div className='w-full h-auto p-20'>
-           <div className='flex flex-col items-center gap-9'>
-           <h1 className='text-4xl text-white text-center font-bold'>BENEFITS FOREX & COMMODITY</h1>
-           <p className='text-white text-[18px] text-center w-[70%] flex '>A Forex & Commodity , Forex-currency or Forex is a digital currency designed to work as a medium of exchange through a decentralized network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it.</p>
-           </div>
-           <img src={traid} alt="" />
+    <div className='w-full h-auto p-10 md:p-20'>
+        <div className='flex flex-col items-center gap-9'>
+            <h1 className='text-4xl text-white text-center font-bold'>BENEFITS FOREX & COMMODITY</h1>
+            <p className='text-white text-[18px] text-center w-full md:w-[70%]'>
+                A Forex & Commodity, Forex-currency or Forex is a digital currency designed to work as a medium of exchange through a decentralized network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it.
+            </p>
         </div>
-
+        <div className='flex justify-center mt-10'>
+            <img src={traid} alt="Forex and Commodity Illustration" className='max-w-full h-auto' />
+        </div>
     </div>
+</div>
+
 
     {/* /////////////////////////////////////BENEFITS FOREX & COMMODITY Section End///////////////////////////// */}
 
@@ -275,114 +312,36 @@ export default function Hero() {
     {/* /////////////////////////////////////Our Blog and News Section End///////////////////////////// */}
 
     <div className='w-full h-auto relative'>
-        <div className='w-full h-auto p-14 bg-[#090717]'>
+    <div className='w-full h-auto p-14 bg-[#090717]'>
         <div className='flex flex-col items-center gap-9'>
-            <img src={rocket} alt=""  className='absolute top-0 right-0' width='200px'/>
-           <h1 className='text-4xl text-white text-center font-bold'>Our Blog and News</h1>
-           <p className='text-white text-[18px] text-center w-[70%] flex '>Our blog provide a better information about investment,forex trading and current market status.</p>
-           </div>
-           <div className="slider-container border">
-      <Slider {...settings}>
-        <div>
-        <div class="col">
-    <div class="card">
-      <img src={blogimage1} class="card-img-top" alt="..."/>
-      <div class="card-body bg-[#090717] text-white text-center">
-        <h5 class="card-title text-2xl">Card title</h5>
-        <h5 class="card-title">Monday, 2024 | By John Don</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
+            <img src={rocket} alt="Rocket" className='absolute top-0 right-0 w-48' />
+            <h1 className='text-4xl text-white text-center font-bold'>Our Blog and News</h1>
+            <p className='text-white text-[18px] text-center w-full md:w-[70%]'>
+                Our blog provides better information about investment, forex trading, and current market status.
+            </p>
         </div>
-        <div>
-        <div class="col">
-    <div class="card">
-      <img src={blogimage1} class="card-img-top" alt="..."/>
-      <div class="card-body bg-[#090717] text-white text-center">
-        <h5 class="card-title text-2xl">Card title</h5>
-        <h5 class="card-title">Monday, 2024 | By John Don</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-        </div>
-        <div>
-        <div class="col">
-    <div class="card">
-      <img src={blogimage1} class="card-img-top" alt="..."/>
-      <div class="card-body bg-[#090717] text-white text-center">
-        <h5 class="card-title text-2xl">Card title</h5>
-        <h5 class="card-title">Monday, 2024 | By John Don</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-        </div>
-        <div>
-        <div class="col">
-    <div class="card">
-      <img src={blogimage1} class="card-img-top" alt="..."/>
-      <div class="card-body bg-[#090717] text-white text-center">
-        <h5 class="card-title text-2xl">Card title</h5>
-        <h5 class="card-title">Monday, 2024 | By John Don</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-        </div>
-        <div>
-        <div class="col">
-    <div class="card">
-      <img src={blogimage1} class="card-img-top" alt="..."/>
-      <div class="card-body bg-[#090717] text-white text-center">
-        <h5 class="card-title text-2xl">Card title</h5>
-        <h5 class="card-title">Monday, 2024 | By John Don</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-        </div>
-        <div>
-        <div class="col">
-    <div class="card">
-      <img src={blogimage1} class="card-img-top" alt="..."/>
-      <div class="card-body bg-[#090717] text-white text-center">
-        <h5 class="card-title text-2xl">Card title</h5>
-        <h5 class="card-title">Monday, 2024 | By John Don</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-        </div>
-        <div>
-        <div class="col">
-    <div class="card">
-      <img src={blogimage1} class="card-img-top" alt="..."/>
-      <div class="card-body bg-[#090717] text-white text-center">
-        <h5 class="card-title text-2xl">Card title</h5>
-        <h5 class="card-title">Monday, 2024 | By John Don</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-        </div>
-        <div>
-        <div class="col">
-    <div class="card">
-      <img src={blogimage1} class="card-img-top" alt="..."/>
-      <div class="card-body bg-[#090717] text-white text-center">
-        <h5 class="card-title text-2xl">Card title</h5>
-        <h5 class="card-title">Monday, 2024 | By John Don</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-        </div>
-      </Slider>
-    </div>
+        
+        <div className="slider-container border">
+            <Slider {...settings}>
+                {Array(8).fill().map((_, index) => (
+                    <div key={index}>
+                        <div className="col">
+                            <div className="card">
+                                <img src={blogimage1} className="card-img-top" alt="Blog post" />
+                                <div className="card-body bg-[#090717] text-white text-center">
+                                    <h5 className="card-title text-2xl">Card title</h5>
+                                    <h5 className="card-title">Monday, 2024 | By John Don</h5>
+                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </Slider>
         </div>
     </div>
+</div>
+
 
     {/* /////////////////////////////////////Our Blog and News Section End///////////////////////////// */}
     </>
